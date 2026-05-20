@@ -2,478 +2,667 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Satish Weds Satya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Satish ❤️ Satya Wedding Invitation</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #fff8f0, #ffe7d6, #fff0f6);
-      color: #4a2c2a;
-      overflow-x: hidden;
-      scroll-behavior: smooth;
+    html{
+      scroll-behavior:smooth;
     }
 
-    h1, h2, h3 {
-      font-family: 'Cinzel', serif;
+    body{
+      font-family:'Poppins',sans-serif;
+      overflow-x:hidden;
+      color:#fff;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
     }
 
-    .opening-screen {
-      position: fixed;
-      inset: 0;
-      background: linear-gradient(135deg, #8b0000, #c44536, #f39c12);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      color: white;
-      animation: fadeOut 2s ease 3s forwards;
+    h1,h2,h3{
+      font-family:'Cinzel', serif;
     }
 
-    .opening-screen h1 {
-      font-size: 3rem;
-      text-align: center;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
+    .overlay{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,0.25);
+      z-index:-1;
     }
 
-    .opening-screen p {
-      font-size: 1.2rem;
+    /* OPENING SCREEN */
+
+    .opening-screen{
+      position:fixed;
+      inset:0;
+      z-index:9999;
+
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+
+      background:linear-gradient(135deg,#6d0000,#b22222,#ff9800);
+
+      text-align:center;
+
+      animation:fadeOut 2s ease 4s forwards;
     }
 
-    @keyframes fadeOut {
-      to {
-        opacity: 0;
-        visibility: hidden;
+    .opening-screen h1{
+      font-size:3.5rem;
+      margin-bottom:20px;
+    }
+
+    .opening-screen p{
+      font-size:1.3rem;
+    }
+
+    @keyframes fadeOut{
+      to{
+        opacity:0;
+        visibility:hidden;
       }
     }
 
-    .floating {
-      position: fixed;
-      top: -10px;
-      font-size: 24px;
-      animation: floatDown linear infinite;
-      opacity: 0.7;
-      z-index: 1;
+    /* FLOATING FLOWERS */
+
+    .floating{
+      position:fixed;
+      top:-10px;
+      animation:fall linear infinite;
+      z-index:2;
+      opacity:0.8;
     }
 
-    @keyframes floatDown {
-      to {
-        transform: translateY(110vh);
+    @keyframes fall{
+      to{
+        transform:translateY(110vh);
       }
     }
 
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
-      position: relative;
-      z-index: 2;
+    /* HERO */
+
+    .hero{
+      min-height:100vh;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      padding:40px 20px;
+      text-align:center;
+      position:relative;
+      z-index:3;
     }
 
-    .hero-card {
-      background: rgba(255, 255, 255, 0.85);
-      padding: 40px;
-      border-radius: 30px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-      max-width: 900px;
-      width: 100%;
-      border: 3px solid #d4af37;
-      backdrop-filter: blur(8px);
+    .hero-card{
+      max-width:950px;
+      width:100%;
+
+      background:rgba(255,255,255,0.12);
+      backdrop-filter:blur(12px);
+
+      border:2px solid rgba(255,255,255,0.25);
+
+      border-radius:35px;
+
+      padding:45px 30px;
+
+      box-shadow:0 10px 40px rgba(0,0,0,0.4);
     }
 
-    .hero img {
-      width: 220px;
-      border-radius: 20px;
-      margin-bottom: 25px;
-      border: 5px solid #d4af37;
+    .hero img{
+      width:240px;
+      margin-bottom:25px;
+      border-radius:25px;
+      border:4px solid gold;
+      background:white;
+      padding:8px;
     }
 
-    .tagline {
-      font-size: 1.2rem;
-      color: #7b241c;
-      margin: 18px 0;
-      font-weight: 500;
+    .wedding-title{
+      color:#ffd700;
+      font-weight:600;
+      margin-bottom:12px;
+      font-size:1.1rem;
+      letter-spacing:2px;
     }
 
-    .names {
-      font-size: 3.2rem;
-      color: #8b0000;
-      line-height: 1.3;
-      margin-bottom: 10px;
+    .names{
+      font-size:3.5rem;
+      line-height:1.4;
+      margin-bottom:18px;
+      color:#fff;
     }
 
-    .invite-text {
-      margin-top: 15px;
-      font-size: 1.1rem;
-      line-height: 1.8;
+    .tagline{
+      color:#ffe082;
+      font-size:1.25rem;
+      line-height:1.8;
+      margin-bottom:25px;
+      font-style:italic;
     }
 
-    .section {
-      padding: 80px 20px;
-      position: relative;
-      z-index: 2;
+    .invite-text{
+      font-size:1.05rem;
+      line-height:2;
+      max-width:750px;
+      margin:auto;
     }
 
-    .section-title {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 50px;
-      color: #8b0000;
+    /* BUTTONS */
+
+    .buttons{
+      margin-top:35px;
+
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      flex-wrap:wrap;
     }
 
-    .event-card {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 35px;
-      border-radius: 25px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-      border-left: 10px solid #d4af37;
+    .btn{
+      padding:14px 30px;
+      border-radius:50px;
+      text-decoration:none;
+      color:white;
+      font-weight:600;
+
+      background:linear-gradient(135deg,#ff9800,#c62828);
+
+      transition:0.3s ease;
+
+      box-shadow:0 8px 20px rgba(0,0,0,0.35);
     }
 
-    .event-card h3 {
-      color: #8b0000;
-      font-size: 2rem;
-      margin-bottom: 15px;
+    .btn:hover{
+      transform:translateY(-3px) scale(1.04);
     }
 
-    .event-details {
-      line-height: 2;
-      font-size: 1.05rem;
+    /* SECTION */
+
+    .section{
+      padding:90px 20px;
+      position:relative;
+      z-index:3;
     }
 
-    .countdown {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 30px;
+    .section-title{
+      text-align:center;
+      font-size:2.8rem;
+      margin-bottom:50px;
+      color:#ffd54f;
     }
 
-    .time-box {
-      background: white;
-      width: 130px;
-      padding: 25px 10px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-      border: 2px solid #f4c542;
+    /* COUNTDOWN */
+
+    .countdown{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
     }
 
-    .time-box h3 {
-      font-size: 2.5rem;
-      color: #8b0000;
+    .time-box{
+      width:140px;
+      padding:25px;
+
+      border-radius:22px;
+
+      background:rgba(255,255,255,0.12);
+      backdrop-filter:blur(10px);
+
+      text-align:center;
+
+      border:1px solid rgba(255,255,255,0.2);
     }
 
-    .time-box p {
-      margin-top: 8px;
-      font-weight: 600;
+    .time-box h3{
+      font-size:2.7rem;
+      color:#ffd700;
     }
 
-    .quote-box {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-      background: rgba(255,255,255,0.8);
-      padding: 40px;
-      border-radius: 25px;
-      line-height: 2;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    .time-box p{
+      margin-top:10px;
+      font-weight:600;
     }
 
-    .parents {
-      margin-top: 30px;
-      font-size: 1rem;
+    /* EVENT */
+
+    .event-card{
+      max-width:850px;
+      margin:auto;
+
+      background:rgba(255,255,255,0.12);
+      backdrop-filter:blur(12px);
+
+      border-radius:30px;
+
+      padding:40px;
+
+      border:1px solid rgba(255,255,255,0.2);
     }
 
-    .buttons {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
+    .event-card h3{
+      color:#ffd700;
+      font-size:2rem;
+      margin-bottom:20px;
     }
 
-    .btn {
-      text-decoration: none;
-      background: linear-gradient(135deg, #8b0000, #d35400);
-      color: white;
-      padding: 14px 28px;
-      border-radius: 50px;
-      font-weight: 600;
-      transition: 0.3s ease;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    .event-details{
+      line-height:2.2;
+      font-size:1.05rem;
     }
 
-    .btn:hover {
-      transform: translateY(-3px) scale(1.02);
+    hr{
+      border:none;
+      border-top:1px solid rgba(255,255,255,0.2);
     }
 
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background: #8b0000;
-      color: white;
-      margin-top: 50px;
+    /* QUOTES */
+
+    .quote-box{
+      max-width:900px;
+      margin:auto;
+
+      background:rgba(255,255,255,0.12);
+
+      border-radius:30px;
+
+      padding:45px;
+
+      line-height:2;
+
+      backdrop-filter:blur(12px);
+
+      text-align:center;
     }
 
-    @media(max-width: 768px) {
-      .names {
-        font-size: 2.3rem;
+    .parents{
+      margin-top:35px;
+    }
+
+    footer{
+      text-align:center;
+      padding:35px 20px;
+      background:rgba(0,0,0,0.45);
+      margin-top:40px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      .names{
+        font-size:2.3rem;
       }
 
-      .hero-card {
-        padding: 25px;
+      .hero img{
+        width:190px;
       }
 
-      .opening-screen h1 {
-        font-size: 2rem;
+      .opening-screen h1{
+        font-size:2.2rem;
       }
 
-      .time-box {
-        width: 100px;
+      .time-box{
+        width:110px;
       }
+
+      .section-title{
+        font-size:2rem;
+      }
+
     }
+
   </style>
 </head>
+
 <body>
 
-  <!-- Opening Animation -->
-  <div class="opening-screen">
-    <h1>💐 Satish ❤️ Satya 💐</h1>
-    <p>Together is a beautiful place to be</p>
+<div class="overlay"></div>
+
+<!-- MUSIC -->
+
+<audio autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_4b7f6b65d4.mp3?filename=indian-background-music-11055.mp3" type="audio/mp3">
+</audio>
+
+<!-- OPENING SCREEN -->
+
+<div class="opening-screen">
+  <h1>💐 Satish ❤️ Satya 💐</h1>
+  <p>Together is a beautiful place to be</p>
+</div>
+
+<!-- FLOATING FLOWERS -->
+
+<script>
+
+  const flowers = ['🌸','🌺','💮','🌼','❤️','✨'];
+
+  for(let i=0;i<35;i++){
+
+    const flower = document.createElement('div');
+
+    flower.className = 'floating';
+
+    flower.innerHTML = flowers[Math.floor(Math.random()*flowers.length)];
+
+    flower.style.left = Math.random()*100 + 'vw';
+
+    flower.style.animationDuration = (5 + Math.random()*10) + 's';
+
+    flower.style.fontSize = (18 + Math.random()*22) + 'px';
+
+    document.body.appendChild(flower);
+  }
+
+</script>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-card">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/6833/6833605.png" alt="South Indian Wedding Couple">
+
+    <div class="wedding-title">
+      WEDDING INVITATION
+    </div>
+
+    <h1 class="names">
+      Paidi Purna Satish
+      <br>
+      ❤️
+      <br>
+      Geddam Durgasatyavathi
+    </h1>
+
+    <p class="tagline">
+      “Bound by destiny, blessed by families,
+      and united in love forever.”
+    </p>
+
+    <p class="invite-text">
+      With immense joy and the blessings of our beloved families,
+      we cordially invite you to celebrate our wedding ceremony
+      and begin a beautiful new chapter of togetherness.
+      Your presence and blessings will make our special day even more memorable.
+    </p>
+
+    <div class="buttons">
+
+      <a class="btn" href="#events">
+        View Events
+      </a>
+
+      <a class="btn"
+      target="_blank"
+      href="https://wa.me/?text=You%20are%20invited%20to%20Satish%20and%20Satya's%20Wedding%20Celebration!">
+        Share on WhatsApp
+      </a>
+
+    </div>
+
   </div>
 
-  <!-- Floating Flowers -->
-  <script>
-    const flowers = ['🌸', '🌺', '💮', '🌼', '❤️'];
+</section>
 
-    for (let i = 0; i < 25; i++) {
-      const flower = document.createElement('div');
-      flower.className = 'floating';
-      flower.innerHTML = flowers[Math.floor(Math.random() * flowers.length)];
-      flower.style.left = Math.random() * 100 + 'vw';
-      flower.style.animationDuration = (5 + Math.random() * 8) + 's';
-      flower.style.fontSize = (18 + Math.random() * 20) + 'px';
-      document.body.appendChild(flower);
-    }
-  </script>
+<!-- COUNTDOWN -->
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/4213/4213958.png" alt="Couple Cartoon">
+<section class="section">
 
-      <p style="font-size:1.1rem;color:#d35400;font-weight:600;">Wedding Invitation</p>
+  <h2 class="section-title">
+    Countdown To Celebration
+  </h2>
 
-      <h1 class="names">
-        Paidi Purna Satish <br>
-        ❤️ <br>
-        Geddam Durgasatyavathi
-      </h1>
+  <div class="countdown">
 
-      <p class="tagline">
-        “Two souls, one sacred journey, forever intertwined in love.”
-      </p>
-
-      <p class="invite-text">
-        With the blessings of our families,
-        we warmly invite you to celebrate the beginning of our forever.
-        Your presence will make our special day even more memorable.
-      </p>
-
-      <div class="buttons">
-        <a class="btn" href="#event">View Event</a>
-        <a class="btn" target="_blank" href="https://wa.me/?text=You%20are%20invited%20to%20Satish%20and%20Satya's%20Wedding!">Share on WhatsApp</a>
-      </div>
+    <div class="time-box">
+      <h3 id="days">0</h3>
+      <p>Days</p>
     </div>
-  </section>
 
-  <!-- Countdown -->
-  <section class="section">
-    <h2 class="section-title">Countdown To Celebration</h2>
-
-    <div class="countdown">
-      <div class="time-box">
-        <h3 id="days">0</h3>
-        <p>Days</p>
-      </div>
-
-      <div class="time-box">
-        <h3 id="hours">0</h3>
-        <p>Hours</p>
-      </div>
-
-      <div class="time-box">
-        <h3 id="minutes">0</h3>
-        <p>Minutes</p>
-      </div>
-
-      <div class="time-box">
-        <h3 id="seconds">0</h3>
-        <p>Seconds</p>
-      </div>
+    <div class="time-box">
+      <h3 id="hours">0</h3>
+      <p>Hours</p>
     </div>
-  </section>
 
-  <!-- Event Section -->
-  <section class="section" id="event">
-    <h2 class="section-title">Wedding Event</h2>
-
-    <div class="event-card">
-      <h3>💐 Reception Ceremony</h3>
-
-      <div class="event-details">
-        <p><strong>Date:</strong> July 2nd, 2026</p>
-        <p><strong>Time:</strong> 12:00 PM Noon</p>
-        <p><strong>Venue:</strong> Annavaram</p>
-        <p><strong>Address:</strong> Annavaram, East Godavari District, Andhra Pradesh</p>
-      </div>
-
-      <div class="buttons">
-        <a class="btn" target="_blank" href="https://maps.app.goo.gl/ZjnyxZ5rNas322B7A">Open Google Maps</a>
-        <a class="btn" href="tel:7981063944">Call Us</a>
-        <a class="btn" target="_blank" href="https://wa.me/917981063944">WhatsApp</a>
-      </div>
+    <div class="time-box">
+      <h3 id="minutes">0</h3>
+      <p>Minutes</p>
     </div>
-  </section>
 
-  <!-- Quotes -->
-  <section class="section">
-    <h2 class="section-title">Blessings & Love</h2>
-
-    <div class="quote-box">
-      <p>
-        “A successful marriage requires falling in love many times, always with the same person.”
-      </p>
-
-      <br>
-
-      <p>
-        “Where there is love, there is life.”
-      </p>
-
-      <div class="parents">
-        <h3 style="margin-bottom:20px;color:#8b0000;">With Blessings From</h3>
-
-        <p><strong>Bride Parents:</strong> Paidi Ammiraju (Late) & Paidi Hemalatha</p>
-        <p><strong>Groom Parents:</strong> Geddam Lakshmana Rao & Geddam Mangalakshmi</p>
-      </div>
+    <div class="time-box">
+      <h3 id="seconds">0</h3>
+      <p>Seconds</p>
     </div>
-  </section>
 
-  <footer>
-    <h3>💖 Thank You 💖</h3>
-    <p>Your presence is the greatest gift to us.</p>
+  </div>
+
+</section>
+
+<!-- EVENTS -->
+
+<section class="section" id="events">
+
+  <h2 class="section-title">
+    Wedding Celebrations
+  </h2>
+
+  <div class="event-card">
+
+    <h3>💒 Wedding Muhurtham</h3>
+
+    <div class="event-details">
+
+      <p><strong>Date:</strong> July 2nd, 2026</p>
+
+      <p><strong>Muhurtham:</strong> 1:00 AM</p>
+
+      <p><strong>Venue:</strong> Annavaram</p>
+
+      <p><strong>Address:</strong> Annavaram,
+      East Godavari District,
+      Andhra Pradesh</p>
+
+    </div>
+
+    <br><hr><br>
+
+    <h3>🎉 Reception Ceremony</h3>
+
+    <div class="event-details">
+
+      <p><strong>Date:</strong> July 2nd, 2026</p>
+
+      <p><strong>Time:</strong> 12:00 PM Noon</p>
+
+      <p><strong>Venue:</strong> Annavaram</p>
+
+    </div>
+
+    <div class="buttons">
+
+      <a class="btn"
+      target="_blank"
+      href="https://maps.app.goo.gl/ZjnyxZ5rNas322B7A">
+        Open Google Maps
+      </a>
+
+      <a class="btn"
+      href="tel:7981063944">
+        Call Us
+      </a>
+
+      <a class="btn"
+      target="_blank"
+      href="https://wa.me/917981063944">
+        WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- QUOTES -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    Blessings & Love
+  </h2>
+
+  <div class="quote-box">
+
+    <p>
+      “A successful marriage requires falling in love many times,
+      always with the same person.”
+    </p>
+
     <br>
-    <p>Made with love for Satish & Satya Wedding</p>
-  </footer>
 
-  <!-- Countdown Script -->
-  <script>
-    const weddingDate = new Date('July 2, 2026 12:00:00').getTime();
+    <p>
+      “Where there is love, there is life.”
+    </p>
 
-    const countdown = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = weddingDate - now;
+    <div class="parents">
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      <h3 style="margin-bottom:20px;color:#ffd700;">
+        With Blessings From
+      </h3>
 
-      document.getElementById('days').innerHTML = days;
-      document.getElementById('hours').innerHTML = hours;
-      document.getElementById('minutes').innerHTML = minutes;
-      document.getElementById('seconds').innerHTML = seconds;
+      <p>
+        <strong>Bride Parents:</strong>
+        Paidi Ammiraju (Late)
+        & Paidi Hemalatha
+      </p>
 
-      if (distance < 0) {
-        clearInterval(countdown);
-        document.querySelector('.countdown').innerHTML = '<h2>🎉 Wedding Celebration Started 🎉</h2>';
-      }
-    }, 1000);
-  </script>
+      <p>
+        <strong>Groom Parents:</strong>
+        Geddam Lakshmana Rao
+        & Geddam Mangalakshmi
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <h2>💖 Thank You 💖</h2>
+
+  <br>
+
+  <p>
+    Your presence is the greatest gift to us.
+  </p>
+
+  <br>
+
+  <p>
+    Made with ❤️ for Satish & Satya Wedding
+  </p>
+
+</footer>
+
+<!-- COUNTDOWN SCRIPT -->
+
+<script>
+
+  const weddingDate = new Date('July 2, 2026 01:00:00').getTime();
+
+  const countdown = setInterval(() => {
+
+    const now = new Date().getTime();
+
+    const distance = weddingDate - now;
+
+    const days =
+    Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    const hours =
+    Math.floor((distance %
+    (1000 * 60 * 60 * 24)) /
+    (1000 * 60 * 60));
+
+    const minutes =
+    Math.floor((distance %
+    (1000 * 60 * 60)) /
+    (1000 * 60));
+
+    const seconds =
+    Math.floor((distance %
+    (1000 * 60)) / 1000);
+
+    document.getElementById('days').innerHTML = days;
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
+
+    if(distance < 0){
+
+      clearInterval(countdown);
+
+      document.querySelector('.countdown').innerHTML =
+      '<h2>🎉 Wedding Celebration Started 🎉</h2>';
+
+    }
+
+  },1000);
+
+</script>
+
+<!-- FIREWORKS -->
+
+<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+
+<script>
+
+  const container = document.body;
+
+  const fireworks = new Fireworks.default(container, {
+
+    autoresize:true,
+    opacity:0.4,
+    acceleration:1.02,
+    friction:0.98,
+    gravity:1.5,
+    particles:60,
+    traceLength:3,
+    traceSpeed:10
+
+  });
+
+  fireworks.start();
+
+</script>
 
 </body>
 </html>
-
-<!--
-===========================================================
-HOW TO DEPLOY THIS WEBSITE FOR FREE USING GITHUB PAGES
-===========================================================
-
-STEP 1:
-Create a GitHub account if you don't have one.
-Website: https://github.com
-
-STEP 2:
-Create a new repository.
-Repository Name Example:
-satishwedssatya
-
-STEP 3:
-Upload this file.
-Rename this file to:
-index.html
-
-STEP 4:
-Open Repository → Settings → Pages
-
-STEP 5:
-Under "Build and deployment"
-Select:
-Source → Deploy from branch
-
-STEP 6:
-Choose:
-Branch → main
-Folder → /root
-
-Click SAVE.
-
-STEP 7:
-Wait 1–2 minutes.
-Your website will be live at:
-https://YOUR_USERNAME.github.io/satishwedssatya/
-
-===========================================================
-CUSTOM DOMAIN SETUP (Optional)
-===========================================================
-
-If you buy a domain like:
-www.satishwedssatya.com
-
-Go to:
-Settings → Pages → Custom Domain
-
-Add your domain.
-
-You can buy domains from:
-- GoDaddy
-- Namecheap
-- Google Domains
-
-===========================================================
-HOW TO UPDATE LATER
-===========================================================
-
-1. Edit index.html
-2. Upload again to GitHub
-3. Commit changes
-4. Website auto updates in 1 minute
-
-===========================================================
--->
