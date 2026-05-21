@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Satish ❤️ Satya Wedding Invitation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Purna Satish ❤️ Durgasatyavathi</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,89 +20,32 @@
       box-sizing:border-box;
     }
 
-    html{
-      scroll-behavior:smooth;
-    }
-
     body{
       font-family:'Poppins',sans-serif;
       overflow-x:hidden;
-      color:#fff;
+      color:white;
 
       background:
-      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-      url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600&auto=format&fit=crop');
+      linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.58)),
+      url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1600&auto=format&fit=crop');
 
       background-size:cover;
       background-position:center;
       background-attachment:fixed;
     }
 
+    html{
+      scroll-behavior:smooth;
+    }
+
     h1,h2,h3{
-      font-family:'Cinzel', serif;
-    }
-
-    .overlay{
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,0.25);
-      z-index:-1;
-    }
-
-    /* OPENING SCREEN */
-
-    .opening-screen{
-      position:fixed;
-      inset:0;
-      z-index:9999;
-
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-
-      background:linear-gradient(135deg,#6d0000,#b22222,#ff9800);
-
-      text-align:center;
-
-      animation:fadeOut 2s ease 4s forwards;
-    }
-
-    .opening-screen h1{
-      font-size:3.5rem;
-      margin-bottom:20px;
-    }
-
-    .opening-screen p{
-      font-size:1.3rem;
-    }
-
-    @keyframes fadeOut{
-      to{
-        opacity:0;
-        visibility:hidden;
-      }
-    }
-
-    /* FLOATING FLOWERS */
-
-    .floating{
-      position:fixed;
-      top:-10px;
-      animation:fall linear infinite;
-      z-index:2;
-      opacity:0.8;
-    }
-
-    @keyframes fall{
-      to{
-        transform:translateY(110vh);
-      }
+      font-family:'Cinzel',serif;
     }
 
     /* HERO */
 
     .hero{
+
       min-height:100vh;
 
       display:flex;
@@ -109,202 +54,307 @@
 
       padding:40px 20px;
       text-align:center;
-      position:relative;
-      z-index:3;
     }
 
     .hero-card{
-      max-width:950px;
+
       width:100%;
+      max-width:950px;
 
       background:rgba(255,255,255,0.12);
-      backdrop-filter:blur(12px);
 
-      border:2px solid rgba(255,255,255,0.25);
+      backdrop-filter:blur(14px);
 
-      border-radius:35px;
+      border-radius:30px;
 
-      padding:45px 30px;
+      padding:60px 30px;
+
+      border:1px solid rgba(255,255,255,0.18);
 
       box-shadow:0 10px 40px rgba(0,0,0,0.4);
+
+      animation:fadeUp 1.5s ease;
+    }
+
+    @keyframes fadeUp{
+
+      from{
+        opacity:0;
+        transform:translateY(40px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+
     }
 
     .hero img{
-      width:240px;
-      margin-bottom:25px;
-      border-radius:25px;
-      border:4px solid gold;
+
+      width:230px;
+      margin-bottom:30px;
+
+      border-radius:24px;
+
+      border:4px solid #f7c948;
+
       background:white;
       padding:8px;
     }
 
-    .wedding-title{
-      color:#ffd700;
-      font-weight:600;
-      margin-bottom:12px;
-      font-size:1.1rem;
-      letter-spacing:2px;
+    .wedding-text{
+
+      letter-spacing:4px;
+      font-size:0.95rem;
+
+      color:#ffd54f;
+
+      margin-bottom:18px;
     }
 
     .names{
-      font-size:3.5rem;
-      line-height:1.4;
-      margin-bottom:18px;
-      color:#fff;
+
+      font-size:4rem;
+      line-height:1.3;
+
+      margin-bottom:25px;
     }
 
     .tagline{
+
       color:#ffe082;
-      font-size:1.25rem;
-      line-height:1.8;
-      margin-bottom:25px;
-      font-style:italic;
+
+      font-size:1.2rem;
+
+      line-height:2;
+
+      max-width:700px;
+
+      margin:auto auto 30px;
     }
 
-    .invite-text{
-      font-size:1.05rem;
+    .invite{
+
       line-height:2;
-      max-width:750px;
+
+      max-width:760px;
+
       margin:auto;
+
+      font-size:1.02rem;
     }
 
     /* BUTTONS */
 
     .buttons{
-      margin-top:35px;
+
+      margin-top:40px;
 
       display:flex;
       justify-content:center;
-      gap:18px;
       flex-wrap:wrap;
+
+      gap:18px;
     }
 
     .btn{
-      padding:14px 30px;
-      border-radius:50px;
-      text-decoration:none;
-      color:white;
-      font-weight:600;
 
-      background:linear-gradient(135deg,#ff9800,#c62828);
+      text-decoration:none;
+
+      color:white;
+
+      padding:14px 30px;
+
+      border-radius:50px;
+
+      background:linear-gradient(135deg,#ff9800,#d84315);
 
       transition:0.3s ease;
 
-      box-shadow:0 8px 20px rgba(0,0,0,0.35);
+      font-weight:600;
+
+      box-shadow:0 6px 20px rgba(0,0,0,0.3);
     }
 
     .btn:hover{
-      transform:translateY(-3px) scale(1.04);
-    }
 
-    /* SECTION */
+      transform:translateY(-3px);
 
-    .section{
-      padding:90px 20px;
-      position:relative;
-      z-index:3;
-    }
-
-    .section-title{
-      text-align:center;
-      font-size:2.8rem;
-      margin-bottom:50px;
-      color:#ffd54f;
     }
 
     /* COUNTDOWN */
 
+    .section{
+
+      padding:90px 20px;
+      text-align:center;
+    }
+
+    .section-title{
+
+      font-size:2.8rem;
+
+      margin-bottom:50px;
+
+      color:#ffd54f;
+    }
+
     .countdown{
+
       display:flex;
       justify-content:center;
-      flex-wrap:wrap;
       gap:20px;
+
+      flex-wrap:wrap;
     }
 
     .time-box{
-      width:140px;
-      padding:25px;
 
-      border-radius:22px;
+      width:130px;
 
       background:rgba(255,255,255,0.12);
+
+      padding:25px;
+
+      border-radius:24px;
+
       backdrop-filter:blur(10px);
 
-      text-align:center;
-
-      border:1px solid rgba(255,255,255,0.2);
+      border:1px solid rgba(255,255,255,0.15);
     }
 
     .time-box h3{
-      font-size:2.7rem;
-      color:#ffd700;
+
+      font-size:2.8rem;
+      color:#ffd54f;
     }
 
     .time-box p{
+
       margin-top:10px;
-      font-weight:600;
     }
 
     /* EVENT */
 
     .event-card{
+
       max-width:850px;
       margin:auto;
 
       background:rgba(255,255,255,0.12);
-      backdrop-filter:blur(12px);
+
+      padding:45px;
 
       border-radius:30px;
 
-      padding:40px;
+      backdrop-filter:blur(12px);
 
-      border:1px solid rgba(255,255,255,0.2);
+      border:1px solid rgba(255,255,255,0.18);
+
+      line-height:2.2;
     }
 
     .event-card h3{
-      color:#ffd700;
-      font-size:2rem;
-      margin-bottom:20px;
-    }
 
-    .event-details{
-      line-height:2.2;
-      font-size:1.05rem;
+      color:#ffd54f;
+
+      font-size:2rem;
+
+      margin-bottom:18px;
     }
 
     hr{
+
+      margin:35px 0;
+
       border:none;
+
       border-top:1px solid rgba(255,255,255,0.2);
     }
 
-    /* QUOTES */
+    /* QUOTE */
 
-    .quote-box{
-      max-width:900px;
+    .quote{
+
+      max-width:850px;
+
       margin:auto;
 
       background:rgba(255,255,255,0.12);
 
-      border-radius:30px;
-
       padding:45px;
 
-      line-height:2;
+      border-radius:30px;
+
+      line-height:2.2;
 
       backdrop-filter:blur(12px);
 
-      text-align:center;
-    }
-
-    .parents{
-      margin-top:35px;
+      border:1px solid rgba(255,255,255,0.18);
     }
 
     footer{
+
       text-align:center;
-      padding:35px 20px;
-      background:rgba(0,0,0,0.45);
+
+      padding:40px 20px;
+
+      background:rgba(0,0,0,0.4);
+
       margin-top:40px;
+    }
+
+    /* FLOWERS */
+
+    .flower{
+
+      position:fixed;
+
+      top:-20px;
+
+      animation:fall linear infinite;
+
+      z-index:1;
+
+      opacity:0.75;
+    }
+
+    @keyframes fall{
+
+      to{
+        transform:translateY(110vh);
+      }
+
+    }
+
+    /* MUSIC BUTTON */
+
+    .music-btn{
+
+      position:fixed;
+
+      top:20px;
+      right:20px;
+
+      z-index:999;
+
+      background:#ff9800;
+
+      border:none;
+
+      color:white;
+
+      width:55px;
+      height:55px;
+
+      border-radius:50%;
+
+      cursor:pointer;
+
+      font-size:1.2rem;
+
+      box-shadow:0 5px 15px rgba(0,0,0,0.35);
     }
 
     /* MOBILE */
@@ -312,23 +362,39 @@
     @media(max-width:768px){
 
       .names{
-        font-size:2.3rem;
+        font-size:2.5rem;
+      }
+
+      .hero-card{
+        padding:45px 20px;
       }
 
       .hero img{
-        width:190px;
-      }
 
-      .opening-screen h1{
-        font-size:2.2rem;
-      }
+  width:320px;
 
-      .time-box{
-        width:110px;
-      }
+  max-width:90%;
+
+  margin-bottom:35px;
+
+  border-radius:28px;
+
+  border:5px solid #f7c948;
+
+  background:white;
+
+  padding:10px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.35);
+
+}
 
       .section-title{
         font-size:2rem;
+      }
+
+      .time-box{
+        width:105px;
       }
 
     }
@@ -338,42 +404,38 @@
 
 <body>
 
-<div class="overlay"></div>
-
 <!-- MUSIC -->
 
-<audio autoplay loop>
+<audio id="bgMusic" loop>
   <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_4b7f6b65d4.mp3?filename=indian-background-music-11055.mp3" type="audio/mp3">
 </audio>
 
-<!-- OPENING SCREEN -->
+<button class="music-btn" onclick="toggleMusic()">
+  🎵
+</button>
 
-<div class="opening-screen">
-  <h1>💐 Satish ❤️ Satya 💐</h1>
-  <p>Together is a beautiful place to be</p>
-</div>
-
-<!-- FLOATING FLOWERS -->
+<!-- FLOWERS -->
 
 <script>
 
-  const flowers = ['🌸','🌺','💮','🌼','❤️','✨'];
+  const emojis = ['🌸','🌺','✨','💮'];
 
-  for(let i=0;i<35;i++){
+  for(let i=0;i<25;i++){
 
     const flower = document.createElement('div');
 
-    flower.className = 'floating';
+    flower.className='flower';
 
-    flower.innerHTML = flowers[Math.floor(Math.random()*flowers.length)];
+    flower.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
 
-    flower.style.left = Math.random()*100 + 'vw';
+    flower.style.left=Math.random()*100+'vw';
 
-    flower.style.animationDuration = (5 + Math.random()*10) + 's';
+    flower.style.fontSize=(18+Math.random()*20)+'px';
 
-    flower.style.fontSize = (18 + Math.random()*22) + 'px';
+    flower.style.animationDuration=(5+Math.random()*8)+'s';
 
     document.body.appendChild(flower);
+
   }
 
 </script>
@@ -384,18 +446,18 @@
 
   <div class="hero-card">
 
-    <img src="https://cdn-icons-png.flaticon.com/512/6833/6833605.png" alt="South Indian Wedding Couple">
+    <img src="https://cdn-icons-png.flaticon.com/512/6833/6833605.png">
 
-    <div class="wedding-title">
+    <div class="wedding-text">
       WEDDING INVITATION
     </div>
 
     <h1 class="names">
-      Paidi Purna Satish
+      Purna Satish
       <br>
       ❤️
       <br>
-      Geddam Durgasatyavathi
+      Durgasatyavathi
     </h1>
 
     <p class="tagline">
@@ -403,11 +465,15 @@
       and united in love forever.”
     </p>
 
-    <p class="invite-text">
-      With immense joy and the blessings of our beloved families,
-      we cordially invite you to celebrate our wedding ceremony
-      and begin a beautiful new chapter of togetherness.
-      Your presence and blessings will make our special day even more memorable.
+    <p class="invite">
+
+      Together with our families,
+      we warmly invite you to celebrate the joyous occasion
+      of our wedding ceremony and reception.
+
+      Your love, blessings, and presence
+      will make our special day even more memorable.
+
     </p>
 
     <div class="buttons">
@@ -418,7 +484,7 @@
 
       <a class="btn"
       target="_blank"
-      href="https://wa.me/?text=You%20are%20invited%20to%20Satish%20and%20Satya's%20Wedding%20Celebration!">
+      href="https://wa.me/?text=You%20are%20invited%20to%20Purna%20Satish%20and%20Durgasatyavathi's%20Wedding!">
         Share on WhatsApp
       </a>
 
@@ -433,7 +499,7 @@
 <section class="section">
 
   <h2 class="section-title">
-    Countdown To Celebration
+    Countdown To Wedding
   </h2>
 
   <div class="countdown">
@@ -474,51 +540,48 @@
 
     <h3>💒 Wedding Muhurtham</h3>
 
-    <div class="event-details">
+    <p>
+      <strong>Date:</strong> July 2nd, 2026
+    </p>
 
-      <p><strong>Date:</strong> July 2nd, 2026</p>
+    <p>
+      <strong>Time:</strong> 1:00 AM
+    </p>
 
-      <p><strong>Muhurtham:</strong> 1:00 AM</p>
-
-      <p><strong>Venue:</strong> Annavaram</p>
-
-      <p><strong>Address:</strong> Annavaram,
+    <p>
+      <strong>Venue:</strong> Annavaram,
       East Godavari District,
-      Andhra Pradesh</p>
+      Andhra Pradesh
+    </p>
 
-    </div>
+    <hr>
 
-    <br><hr><br>
+    <h3>🎉 Reception</h3>
 
-    <h3>🎉 Reception Ceremony</h3>
+    <p>
+      <strong>Date:</strong> July 2nd, 2026
+    </p>
 
-    <div class="event-details">
+    <p>
+      <strong>Time:</strong> 12:00 PM Noon
+    </p>
 
-      <p><strong>Date:</strong> July 2nd, 2026</p>
-
-      <p><strong>Time:</strong> 12:00 PM Noon</p>
-
-      <p><strong>Venue:</strong> Annavaram</p>
-
-    </div>
+    <p>
+      <strong>Venue:</strong> Annavaram
+    </p>
 
     <div class="buttons">
 
       <a class="btn"
       target="_blank"
       href="https://maps.app.goo.gl/ZjnyxZ5rNas322B7A">
-        Open Google Maps
-      </a>
-
-      <a class="btn"
-      href="tel:7981063944">
-        Call Us
+        Open Maps
       </a>
 
       <a class="btn"
       target="_blank"
       href="https://wa.me/917981063944">
-        WhatsApp
+        Contact Us
       </a>
 
     </div>
@@ -532,10 +595,10 @@
 <section class="section">
 
   <h2 class="section-title">
-    Blessings & Love
+    With Blessings
   </h2>
 
-  <div class="quote-box">
+  <div class="quote">
 
     <p>
       “A successful marriage requires falling in love many times,
@@ -548,35 +611,33 @@
       “Where there is love, there is life.”
     </p>
 
-    <div class="parents">
+    <br><br>
 
-      <h3 style="margin-bottom:20px;color:#ffd700;">
-        With Blessings From
-      </h3>
+    <h3 style="color:#ffd54f;margin-bottom:18px;">
+      Families
+    </h3>
 
-      <p>
-        <strong>Bride Parents:</strong>
-        Paidi Ammiraju (Late)
-        & Paidi Hemalatha
-      </p>
+    <p>
+      <strong>Bride Parents:</strong>
+      Paidi Ammiraju (Late)
+      & Paidi Hemalatha
+    </p>
 
-      <p>
-        <strong>Groom Parents:</strong>
-        Geddam Lakshmana Rao
-        & Geddam Mangalakshmi
-      </p>
-
-    </div>
+    <p>
+      <strong>Groom Parents:</strong>
+      Geddam Lakshmana Rao
+      & Geddam Mangalakshmi
+    </p>
 
   </div>
 
 </section>
 
-<!-- FOOTER -->
-
 <footer>
 
-  <h2>💖 Thank You 💖</h2>
+  <h2>
+    💖 Thank You 💖
+  </h2>
 
   <br>
 
@@ -584,83 +645,73 @@
     Your presence is the greatest gift to us.
   </p>
 
-  <br>
-
-  <p>
-    Made with ❤️ for Satish & Satya Wedding
-  </p>
-
 </footer>
 
-<!-- COUNTDOWN SCRIPT -->
+<!-- COUNTDOWN -->
 
 <script>
 
-  const weddingDate = new Date('July 2, 2026 01:00:00').getTime();
+  const weddingDate =
+  new Date('July 2, 2026 01:00:00').getTime();
 
-  const countdown = setInterval(() => {
+  const x = setInterval(function(){
 
     const now = new Date().getTime();
 
     const distance = weddingDate - now;
 
     const days =
-    Math.floor(distance / (1000 * 60 * 60 * 24));
+    Math.floor(distance / (1000*60*60*24));
 
     const hours =
     Math.floor((distance %
-    (1000 * 60 * 60 * 24)) /
-    (1000 * 60 * 60));
+    (1000*60*60*24)) /
+    (1000*60*60));
 
     const minutes =
     Math.floor((distance %
-    (1000 * 60 * 60)) /
-    (1000 * 60));
+    (1000*60*60)) /
+    (1000*60));
 
     const seconds =
     Math.floor((distance %
-    (1000 * 60)) / 1000);
+    (1000*60)) / 1000);
 
-    document.getElementById('days').innerHTML = days;
-    document.getElementById('hours').innerHTML = hours;
-    document.getElementById('minutes').innerHTML = minutes;
-    document.getElementById('seconds').innerHTML = seconds;
-
-    if(distance < 0){
-
-      clearInterval(countdown);
-
-      document.querySelector('.countdown').innerHTML =
-      '<h2>🎉 Wedding Celebration Started 🎉</h2>';
-
-    }
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
 
   },1000);
 
 </script>
 
-<!-- FIREWORKS -->
-
-<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+<!-- MUSIC CONTROL -->
 
 <script>
 
-  const container = document.body;
+  const music =
+  document.getElementById('bgMusic');
 
-  const fireworks = new Fireworks.default(container, {
+  let playing = false;
 
-    autoresize:true,
-    opacity:0.4,
-    acceleration:1.02,
-    friction:0.98,
-    gravity:1.5,
-    particles:60,
-    traceLength:3,
-    traceSpeed:10
+  function toggleMusic(){
 
-  });
+    if(!playing){
 
-  fireworks.start();
+      music.play();
+
+      playing = true;
+
+    }else{
+
+      music.pause();
+
+      playing = false;
+
+    }
+
+  }
 
 </script>
 
